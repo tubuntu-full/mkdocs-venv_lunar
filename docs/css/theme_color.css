@@ -1,0 +1,35 @@
+
+
+
+
+.wy-side-nav-search {
+  background: #010f18;
+}
+
+
+/* Default text color #2980B9 for navigation links */
+/*.wy-menu-vertical a {
+  color: #2980B9;
+}
+*/
+
+
+
+
+/* Default color #2980B9 for the current/active page text */
+/*.wy-menu-vertical li.current > a {
+  color: #2980B9;
+}
+*/
+
+
+
+/*  Hover background for navigation links */
+/*
+.wy-menu-vertical a:hover {
+  background: #2980B9;
+  color: #ffffff;  
+}
+
+*/
+

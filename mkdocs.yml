@@ -1,1 +1,53 @@
-site_name: My Docs
+site_name: MkDocs-lunar     
+site_url: https://tubuntu-full.github.io/mkdocs-venv_lunar/
+docs_dir: docs
+site_dir: site
+use_directory_urls: false
+theme:
+  name: readthedocs
+  navigation_depth: 5  # Number of header levels shown
+extra_css:
+  - css/extra.css
+  - css/footer.css
+  - css/theme_color.css
+  - css/collapse.css
+nav:
+  - Home: index.md
+  - INPUTS:
+      - Vehicle Control: INPUTS/vehicle_inputs.ipynb
+      - Lunar Environment: INPUTS/environment_inputs.ipynb
+  - OUTPUTS:
+      - Site Selection: OUTPUTS/site_selection.ipynb
+      - Landing Ellipse: OUTPUTS/landing_ellipse.ipynb
+      - Vehicle State: OUTPUTS/vehicle_state.ipynb
+  - MODELS:
+      - Apollo: MODELS/apollo.ipynb
+      - Artemis: MODELS/artemis.ipynb
+  - ASSUMPTIONS:
+      - Mission: ASSUMPTIONS/mission_ass.ipynb
+      - Modeling: ASSUMPTIONS/modeling_ass.ipynb
+  - DATA:
+      - Lunar: DATA/lunar_data.ipynb
+      - Vehicle: DATA/vehicle_data.ipynb
+  - APPENDIX:
+      - Glossary: APPENDIX/glossary.ipynb
+      - Resources: APPENDIX/resources.ipynb
+      - FAQs/UAQs: APPENDIX/faqs.ipynb
+      - Lunar Missions: APPENDIX/lunar_missions.ipynb
+      - Sandbox: APPENDIX/sandbox.md
+  - FEEDBACK:
+      - Blog: FEEDBACK/blog.md
+      - Comment: FEEDBACK/comment.md
+      - Upload: FEEDBACK/upload.md
+      - Meet: FEEDBACK/slide.md
+plugins:
+  - search
+  - mkdocs-jupyter
+  - git-revision-date
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - attr_list
+  - pymdownx.details

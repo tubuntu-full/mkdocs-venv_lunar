@@ -1,0 +1,26 @@
+details {
+  margin-bottom: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open] summary {
+  /* color: #007bff; */
+  color: #2980B9; /* ReadTheDocs primary blue color */
+}
+
+
+
+summary {
+  /* color: #007bff;  */
+  color: #2980B9; /* ReadTheDocs primary blue color */
+  font-weight: bold; /* Optional: make the title bold */
+  cursor: pointer; /* Adds a pointer cursor for clarity */
+}
+
+summary:hover {
+  color: #0056b3; /* Optional: change color on hover */
+}
