@@ -1,0 +1,15 @@
+<!-- Create this as: docs/overrides/main.html -->
+{% extends "base.html" %}
+
+{% block libs %}
+<!-- Add protection script before any content loads -->
+<script>
+    // Skip check only on login page
+    if (!window.location.pathname.endsWith('login.html')) {
+        if (sessionStorage.getItem('authenticated') !== 'true') {
+            window.location.href = '{{ base_url }}/assets/login.html';
+        }
+    }
+</script>
+{{ super() }}
+{% endblock %}
